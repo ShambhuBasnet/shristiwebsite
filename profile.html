@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <style>
+      /* Add your CSS styles here */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .header {
+        background-color: lightgray;
+        padding: 20px;
+      }
+      .header h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+      .header p {
+        font-size: 18px;
+        margin: 0;
+      }
+      .header img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      .section {
+        padding: 20px;
+      }
+      .section h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+      .section p {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+      body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="profile.jpg" alt="Profile picture">
+        <h1>SHRISTI CHHETRI</h1>
+        <p>Student</p>
+      </div>
+      
+      <div class="section">
+        <h2>Contact</h2>
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="lname">Email</label>
+           <input type="text" id="email" name="email" placeholder="xyz@gmail.com">
+
+            <label for="country">District</label>
+            
+              <select class="form-control" name="district" required="required">
+                %{--Mechi--}%
+                <option value="">Address</option>
+                <option value="Taplejung">Taplejung</option>
+                <option value="Panchthar">Panchthar</option>
+                <option value="Ilam">Ilam</option>
+                <option value="Jhapa">Jhapa</option>
+                %{--Koshi--}%
+                <option value="Morang">Morang</option>
+                <option value="Sunsari">Sunsari</option>
+                <option value="Dhankutta">Dhankutta</option>
+                <option value="Sankhuwasabha">Sankhuwasabha</option>
+                <option value="Bhojpur">Bhojpur</option>
+                <option value="Terhathum">Terhathum</option>
+                %{--Sagarmatha--}%
+                <option value="Okhaldunga">Okhaldunga</option>
+                <option value="Khotang">Khotang</option>
+                <option value="Solukhumbu">Solukhumbu</option>
+                <option value="Udaypur">Udaypur</option>
+                <option value="Saptari">Saptari</option>
+                <option value="Siraha">Siraha</option>
+                %{--Janakpur--}%
+                <option value="Dhanusa">Dhanusa</option>
+                <option value="Mahottari">Mahottari</option>
+                <option value="Sarlahi">Sarlahi</option>
+                <option value="Sindhuli">Sindhuli</option>
+                <option value="Ramechhap">Ramechhap</option>
+                <option value="Dolkha">Dolkha</option>
+                %{--Bagmati--}%
+                <option value="Sindhupalchauk">Sindhupalchauk</option>
+                <option value="Kavreplanchauk">Kavreplanchauk</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Nuwakot">Nuwakot</option>
+                <option value="Rasuwa">Rasuwa</option>
+                <option value="Dhading">Dhading</option>
+                %{--Narayani--}%
+                <option value="Makwanpur">Makwanpur</option>
+                <option value="Rauthat">Rauthat</option>
+                <option value="Bara">Bara</option>
+                <option value="Parsa">Parsa</option>
+                <option value="Chitwan">Chitwan</option>
+                %{--Gandaki--}%
+                <option value="Gorkha">Gorkha</option>
+                <option value="Lamjung">Lamjung</option>
+                <option value="Tanahun">Tanahun</option>
+                <option value="Tanahun">Tanahun</option>
+                <option value="Syangja">Syangja</option>
+                <option value="Kaski">Kaski</option>
+                <option value="Manag">Manag</option>
+                %{--Dhawalagiri--}%
+                <option value="Mustang">Mustang</option>
+                <option value="Parwat">Parwat</option>
+                <option value="Myagdi">Myagdi</option>
+                <option value="Myagdi">Myagdi</option>
+                <option value="Baglung">Baglung</option>
+                %{--Lumbini--}%
+                <option value="Gulmi">Gulmi</option>
+                <option value="Palpa">Palpa</option>
+                <option value="Nawalparasi">Nawalparasi</option>
+                <option value="Rupandehi">Rupandehi</option>
+                <option value="Arghakhanchi">Arghakhanchi</option>
+                <option value="Kapilvastu">Kapilvastu</option>
+                %{--Rapti--}%
+                <option value="Pyuthan">Pyuthan</option>
+                <option value="Rolpa">Rolpa</option>
+                <option value="Rukum">Rukum</option>
+                <option value="Salyan">Salyan</option>
+                <option value="Dang">Dang</option>
+                %{--Bheri--}%
+                <option value="Bardiya">Bardiya</option>
+                <option value="Surkhet">Surkhet</option>
+                <option value="Dailekh">Dailekh</option>
+                <option value="Banke">Banke</option>
+                <option value="Jajarkot">Jajarkot</option>
+                %{--Karnali--}%
+                <option value="Dolpa">Dolpa</option>
+                <option value="Humla">Humla</option>
+                <option value="Kalikot">Kalikot</option>
+                <option value="Mugu">Mugu</option>
+                <option value="Jumla">Jumla</option>
+                %{--Seti--}%
+                <option value="Bajura">Bajura</option>
+                <option value="Bajhang">Bajhang</option>
+                <option value="Achham">Achham</option>
+                <option value="Doti">Doti</option>
+                <option value="Kailali">Kailali</option>
+                %{--Mahakali--}%
+                <option value="Kanchanpur">Kanchanpur</option>
+                <option value="Dadeldhura">Dadeldhura</option>
+                <option value="Baitadi">Baitadi</option>
+                <option value="Darchula">Darchula</option>
+            
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
